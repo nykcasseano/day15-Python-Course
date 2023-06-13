@@ -23,10 +23,23 @@ MENU = {
         "cost": 3.0,
     }
 }
-
+profit =13
 resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100,
 }
 
+
+is_on = True
+
+while is_on:
+    choice = input("Please select what do you want to drink:  ( Espresso,Latte, Cappuccino)")
+    if choice == "off":
+        is_on = False
+    elif choice == "report":
+        print(f"Water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Coffee: {resources['coffee']}g")
+        print(f"Money: ${profit}")
+        
